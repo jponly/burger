@@ -1,7 +1,17 @@
+body {
+  background-image: url("/assets/Burger-9.jpg");
+  background-repeat: no-repeat;
+      background-position: right 9%;
+      
+      padding-top:68px;
+      
+      margin-bottom:50px;
+}
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    
   }
   
   .label {
