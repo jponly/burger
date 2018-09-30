@@ -1,17 +1,14 @@
-{{!-- <h1>Burger Time!</h1> --}}
-<h2>Burgers being Smashed on!</h2>
+<h2>Burgers to be smashed on!</h2>
 
-<ul>
+<ol>
   {{#each burgers}}
-    {{#unless devoured}}
+    {{#unless devour}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
-</ul>
-
+</ol>
 <br>
 <br>
-
 <h3>Add a Burger</h3>
 <form class="create-form">
 
@@ -31,14 +28,17 @@
 
 <br>
 <br>
+<h2>Burgers Smashed!</h2>
 
-
-<h2>Burgers not eaten!</h2>
-
-<ul>
+<ol>
   {{#each burgers}}
-    {{#if devoured}}
+    {{#if devour}}
       {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
-</ul>
+</ol>
+
+
+
+
+
